@@ -1,0 +1,15 @@
+page-tabs{
+    .tabbar.show-tabbar{
+        background: #c90a0f;
+    }
+    .tabbar.show-tabbar .icon{
+        color:#b4b3b3;
+    }
+    .tabs-md .tab-button[aria-selected=true] .tab-button-icon
+    {
+        color:white;
+    }
+.tab-button-text{
+    color:white;
+}
+}

@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title><img height="50px" src="http://skascinemas.com/wp-content/uploads/2016/12/img_66.png"></ion-title>
+    <div class="PageTitle">Theatres</div>
+  </ion-navbar>
+</ion-header>  
+
+<ion-content no-padding>
+    <div class="oiu">
+      <div class="aeiou">
+        <div class="Itemes" *ngFor="let theatre of theatres">
+          <div style="width:100%; height:150px; position: relative;">
+            <img class="TheatreImg" src="{{'http://skascinemas.com/admin/' + theatre.th_image}}">
+          </div>
+          <p>{{theatre.th_name}}</p>
+        </div> 
+      </div>
+    </div> 
+
+    <ion-item class="OneItem" *ngFor="let theatre of theatres">
+      <ion-thumbnail item-start>
+        <img src="{{'http://skascinemas.com/admin/' + theatre.th_image}}">
+      </ion-thumbnail>
+      <ion-grid>
+        <ion-row> 
+          <ion-col col-7>
+            <h2>{{theatre.th_name}} - {{theatre.th_location}}</h2> 
+            <p>{{theatre.th_address}}</p> 
+          </ion-col>
+          <ion-col col-5 no-padding>
+            <i class="floter fa fa-chevron-right"></i>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+</ion-content>

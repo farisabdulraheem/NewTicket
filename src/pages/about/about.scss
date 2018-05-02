@@ -1,0 +1,31 @@
+page-about {
+    .oiu {
+        width: 100%;
+        overflow-x: scroll;
+        background: #333;
+        padding: 10px; 
+        padding-right: 20px;
+    }
+    .aeiou {
+        width: 2500px;
+    }
+    .Itemes {
+        float: left;
+        width: 100px;
+        min-height:150px;
+        margin:10px;
+    }   
+    .TheatreImg{
+        width: 100%;
+        height:100%;
+        position: absolute;
+    }    
+    .Itemes p{
+        text-align:center;
+        color: #fff;
+    }
+    .floter{
+        float:right;
+        margin-top:10px;
+    }
+}
