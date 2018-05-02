@@ -59,7 +59,6 @@ getSlides(){
   this.restapiService.getSlides()
   .then(data => {
     this.slides = data.info;
-
   });
 }
 singleMovie(movie_id)
