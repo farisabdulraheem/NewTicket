@@ -13,8 +13,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { api } from '../providers/api/api';
 import * as Constants from '../providers/api/constants';
-import { OneSignal } from '@ionic-native/onesignal';
-import { Ionic2RatingModule } from 'ionic2-rating';
+
+
 @NgModule({
   declarations: [
     MyApp,
@@ -27,7 +27,7 @@ import { Ionic2RatingModule } from 'ionic2-rating';
     BrowserModule,
     HttpModule,
     IonicModule.forRoot(MyApp,{tabsPlacement: 'bottom'}),
-    Ionic2RatingModule
+   
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -41,7 +41,7 @@ import { Ionic2RatingModule } from 'ionic2-rating';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    api, OneSignal,
+    api,
   ]
 })
 export class AppModule {}
